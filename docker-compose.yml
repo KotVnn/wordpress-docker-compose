@@ -6,7 +6,7 @@ services:
     image: wordpress
     restart: always
     ports:
-      - 8080:80
+      - '8080:80'
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
@@ -24,6 +24,6 @@ services:
       MYSQL_PASSWORD: 123456
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     ports:
-      - 3306:3306
+      - '3306:3306'
     volumes:
       - /path/in/host:/var/lib/mysql
