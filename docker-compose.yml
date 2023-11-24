@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: 123456
       WORDPRESS_DB_NAME: wordpress
     volumes:
-      - /Users/kot/PhpstormProjects/wordpress:/var/www/html
+      - /path/in/host:/var/www/html
 
   db:
     image: mysql:5.7
@@ -26,4 +26,4 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - /Users/kot/VolumeDocker/dbMysql:/var/lib/mysql
+      - /path/in/host:/var/lib/mysql
