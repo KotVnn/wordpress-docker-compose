@@ -8,5 +8,5 @@ ENV WORDPRESS_DB_USER=wordpress
 ENV WORDPRESS_DB_PASSWORD=123456
 ENV WORDPRESS_DB_NAME=wordpress
 
-# Mở cổng 8080 của container
+# Mở cổng 80 của container
 EXPOSE 80
